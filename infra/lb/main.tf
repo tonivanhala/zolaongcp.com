@@ -20,6 +20,7 @@ resource "google_compute_target_https_proxy" "website" {
 
 resource "google_compute_global_forwarding_rule" "website" {
   name       = "website-global-forwarding-rule"
+  load_balancing_scheme = "EXTERNAL_MANAGED"
   target     = google_compute_target_https_proxy.website.self_link
   port_range = "443"
   ip_address = google_compute_global_address.website.address
