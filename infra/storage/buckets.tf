@@ -18,3 +18,9 @@ resource "google_storage_bucket_iam_member" "public-view" {
   role   = "roles/storage.objectViewer"
   member = "allUsers"
 }
+
+resource "google_storage_bucket_iam_member" "github-actions-write" {
+    bucket = google_storage_bucket.website.name
+    role   = "roles/storage.objectUser"
+    member = "principalSet://iam.googleapis.com/${var.workload-identity-pool}/attribute.repository/${var.github-repository-path}"
+}

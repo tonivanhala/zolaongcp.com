@@ -15,3 +15,11 @@ variable "zone" {
 variable "domain" {
   type = string
 }
+
+variable "github-organization" {
+  type = string
+}
+
+variable "github-repository" {
+  type = string
+}

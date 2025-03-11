@@ -21,7 +21,10 @@ provider "google" {
 }
 
 locals {
-  domain = var.domain
+  domain              = var.domain
+  github-organization = var.github-organization
+  github-repository   = var.github-repository
+  repository-path     = "${local.github-organization}/${local.github-repository}"
 }
 
 module "dns" {
@@ -36,7 +39,14 @@ module "lb" {
   domain         = local.domain
 }
 
+module "identity" {
+  source              = "./identity"
+  github-organization = local.github-organization
+}
+
 module "storage" {
-  source   = "./storage"
-  location = "EU"
+  source                 = "./storage"
+  location               = "EU"
+  github-repository-path = local.repository-path
+  workload-identity-pool = module.identity.identity-pool
 }
