@@ -32,7 +32,7 @@ This site is built with [Zola](https://www.getzola.org/) and [Serene](https://gi
   terraform apply
   ```
 
-- Copy the template and fill in values for your Google project name, domain name, and Github organization and repository name. Initialize Terraform backend with Bootstrapped remote state. Deploy Google Cloud infrastructure with Terraform.
+- Copy the template and fill in values for your Google project ID, domain name, and Github organization and repository name. Initialize Terraform backend with Bootstrapped remote state. Deploy Google Cloud infrastructure with Terraform.
 
   ```bash
   cd infra
