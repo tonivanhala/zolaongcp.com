@@ -1,0 +1,4 @@
+project             = "Your Google Cloud Project id"
+domain              = "Your registered domain name"
+github-organization = "Your GitHub organization name"
+github-repository   = "Your GitHub repository name"
