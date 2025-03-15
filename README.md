@@ -14,7 +14,7 @@ This site is built with [Zola](https://www.getzola.org/) and [Serene](https://gi
 
 ### Deployment steps
 
-- Setup a new Github project from this repository, e.g., [mirror the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository).
+- Create [a new Github repository using this as a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 - [Create a Google Cloud project](https://developers.google.com/workspace/guides/create-project) for your website (or use existing one).
   * You need to enable [Compute Engine API](https://console.cloud.google.com/apis/library/compute.googleapis.com) and [Cloud DNS API](https://console.cloud.google.com/apis/api/dns.googleapis.com/overview) for the project.
 - [Authenticate for gcloud CLI and ADC for Terraform](https://cloud.google.com/docs/authentication/gcloud).
