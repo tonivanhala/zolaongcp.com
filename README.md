@@ -61,3 +61,9 @@ This site is built with [Zola](https://www.getzola.org/) and [Serene](https://gi
 
 - This site uses the Serene theme as a submodule. Try out other themes from [Zola Themes](https://www.getzola.org/themes/).
   * Follow the installation instructions for the theme and set the theme in `config.toml`.
+
+## License
+
+The code in this repository is licensed under [the MIT license](./LICENSE).
+
+The site that you build with this repository is not covered by the license. It is yours. You don't need to link to this repository in your site or reference the MIT license.
