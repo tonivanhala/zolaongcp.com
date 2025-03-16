@@ -24,7 +24,7 @@ This site is built with [Zola](https://www.getzola.org/) and [Serene](https://gi
   gcloud auth application-default login
   ```
 
-- Bootstrap the remote Terraform state in Google Cloud Storage. Enter you [Google Cloud Project ID](https://support.google.com/googleapi/answer/7014113) when prompted.
+- Bootstrap the remote Terraform state in Google Cloud Storage. Enter your [Google Cloud Project ID](https://support.google.com/googleapi/answer/7014113) when prompted.
 
   ```bash
   cd bootstrap
