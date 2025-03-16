@@ -1,4 +1,4 @@
-# Static Zora site on Google Cloud
+# Static Zola site on Google Cloud
 
 A turn-key deployment for a static website with custom domain on Google Cloud.
 
