@@ -18,6 +18,7 @@ This site is built with [Zola](https://www.getzola.org/) and [Serene](https://gi
 - Set the `base_url` of your site in `config.toml`. Update `title` and `description`, as well as `extra`->`name` and `extra`->`id`, while you're at it.
 - [Create a Google Cloud project](https://developers.google.com/workspace/guides/create-project) for your website (or use existing one).
   * You need to enable [Compute Engine API](https://console.cloud.google.com/apis/library/compute.googleapis.com) and [Cloud DNS API](https://console.cloud.google.com/apis/api/dns.googleapis.com/overview) for the project.
+  * The project needs to be [linked to a billing account](https://cloud.google.com/billing/docs/how-to/modify-project).
 - [Authenticate for gcloud CLI and ADC for Terraform](https://cloud.google.com/docs/authentication/gcloud).
 
   ```bash
