@@ -4,6 +4,11 @@ A turn-key deployment for a static website with custom domain on Google Cloud.
 
 This site is built with [Zola](https://www.getzola.org/) and [Serene](https://github.com/isunjn/serene) theme. Github workflow deploys the site to Google Cloud Storage using Terraform.
 
+> [!NOTE] 
+> Github workflow for this respository has been disabled. This site is now coupled with my main personal site
+> [vanhala.org](https://vanhala.org), which uses a similar setup. The instructions below are still valid for
+> deploying your own site.
+
 ## How to deploy your own site with custom domain
 
 ### Prerequisities
